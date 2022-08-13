@@ -2,7 +2,7 @@
 
 int iVAB, iVBC, iVCA;
 int iVAN, iVBN, VCN;
-int step;
+int step, iFlagStep;
   /************************************* 
               6       3       5
               1       2       4
@@ -67,6 +67,7 @@ void setup() {
 }
 
 void loop() {
+  if(iFlagStep)
   switch (step){
     case 1:
       step1();
